@@ -10,12 +10,12 @@ import os
 class ReadConfig:
     @staticmethod
     def get_config_path():
-        return os.path.abspath(os.path.join(os.path.dirname(__file__), '../Configuration/config.init'))
+        return os.path.abspath(os.path.join(os.path.dirname(__file__), '../Configuration/config.ini'))
 
     @staticmethod
     def get_config():
         config_path = ReadConfig.get_config_path()
-        print(f"Reading config file from: {config_path}")
+        print(f"Reading config.ini file from: {config_path}")
         if not os.path.exists(config_path):
             raise FileNotFoundError(f"Config file not found: {config_path}")
 
