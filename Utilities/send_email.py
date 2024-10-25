@@ -76,3 +76,4 @@ if __name__ == "__main__":
     recipient_email = config['EMAIL']['recipient_email']
 
     send_email(gmail_username, gmail_password, recipient_email)
+# abc
